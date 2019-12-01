@@ -1,0 +1,6 @@
+github.com/nduyhai/liar v0.0.0-20191127022205-7f52dc492a20 h1:BywIIt3h5L/UeKFCSKcxa5iVFyMHSsrWkOyzuJe51Vk=
+github.com/nduyhai/liar v0.0.0-20191127022205-7f52dc492a20/go.mod h1:7xijb3Nwyh+8cQZbn5S2FFYvtdok0Mcx79pMM2ln6YI=
+github.com/sendgrid/rest v2.4.1+incompatible h1:HDib/5xzQREPq34lN3YMhQtMkdXxS/qLp5G3k9a5++4=
+github.com/sendgrid/rest v2.4.1+incompatible/go.mod h1:kXX7q3jZtJXK5c5qK83bSGMdV6tsOE70KbHoqJls4lE=
+github.com/sendgrid/sendgrid-go v3.5.0+incompatible h1:kosbgHyNVYVaqECDYvFVLVD9nvThweBd6xp7vaCT3GI=
+github.com/sendgrid/sendgrid-go v3.5.0+incompatible/go.mod h1:QRQt+LX/NmgVEvmdRw0VT/QgUn499+iza2FnDca9fg8=
