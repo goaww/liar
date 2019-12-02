@@ -11,7 +11,11 @@ type SendGrid struct {
 	ApiKey string
 }
 
-func (s *SendGrid) Send(msg mail.Message) error {
+func NewSendGrid(apiKey string) *SendGrid {
+	return &SendGrid{ApiKey: apiKey}
+}
+
+func (s *SendGrid) Send(msg *mail.Message) error {
 	m := email.NewV3Mail()
 
 	from := email.NewEmail(msg.SenderName, msg.SenderEmail)
@@ -22,8 +26,8 @@ func (s *SendGrid) Send(msg mail.Message) error {
 	p := email.NewPersonalization()
 	tos := make([]*email.Email, len(msg.Receiver))
 
-	for _, e := range msg.Receiver {
-		tos = append(tos, email.NewEmail(e, e))
+	for i, e := range msg.Receiver {
+		tos[i] = email.NewEmail(e, e)
 	}
 
 	p.AddTos(tos...)
